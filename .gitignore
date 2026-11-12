@@ -1,0 +1,12 @@
+.DS_Store
+*.aep
+*.aep.bak
+*.aepx
+Adobe After Effects Auto-Save/
+*.mp4
+*.mov
+*.wav
+*.png
+*.jpg
+*.tif
+*.log

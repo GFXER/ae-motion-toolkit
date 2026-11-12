@@ -1,0 +1,172 @@
+Cinema 4D	Cineware	CINEMA 4D Effect
+3D Channel	Cryptomatte	Cryptomatte
+Simulation	CC Rainfall	CSRainfall
+Simulation	CC Snowfall	CSSnowfall
+3D Channel	EXtractoR	EXtractoR
+3D Channel	IDentifier	IDentifier
+Keying	Keylight (1.2)	Keylight 906
+Obsolete	mocha shape	ISL MochaShapeImporter
+Boris FX Mocha	Mocha AE	mochaAECC
+ProductionCrate	Crate's Light Wrap	PELP
+RG Color	Magic Bullet Looks	MB LookSuite3
+RG Color	Parametric Curve	RG_MB_ParamCurve_AE
+RG Color	Colorista V	RG MB COLORISTA IV
+RG Color	Cosmo II	RG Cosmo_II
+RG Color	Denoiser III	RG Denoiser3
+RG Color	Film	Magic_Bullet_Suite_Magic_Bullet
+RG Color	Mojo II	Magic_Bullet_Mojo_II
+RG Color	Renoiser	Magic_Bullet_Renoiser
+RG Utilities	Grow Bounds	Red Giant GrowBounds
+RE:Vision Plug-ins	RSMB	Smart Motion Blur 3.x
+RE:Vision Plug-ins	RSMB Pro	RS Motion Blur Pro A 3.x
+RE:Vision Plug-ins	RSMB Pro Vectors	RS Motion Blur Pro Vectors 3.x
+RG Blurs and Glows	uni.Blur	Universe_Blur_Blur_Premium
+RG Blurs and Glows	uni.Bokeh	Universe_Blur_Box_Bokeh
+RG Blurs and Glows	uni.Compound Blur	Universe_Compound_Blur_Premium
+RG Blurs and Glows	uni.Spot Blur	Universe_Blur_Spot_Blur
+RG Color	uni.Finisher	Universe_CrumplePop_Finisher
+RG Utilities	uni.Fisheye Fixer	Universe_CrumplePop_Fisheye_Fix
+RG Color	uni.Grain16	Universe_CrumplePop_Grain16
+RG Stylize	uni.OverLight	Universe_CrumplePop_OverLight
+RG Stylize	uni.ShrinkRay	Universe_CrumplePop_ShrinkRay
+RG Utilities	uni.Camera Shake	Universe_Distort_Camera_Shake_P
+RG Distortions	uni.Chromatic Aberration	Universe_Distort_Chromatic_Aber
+RG Distortions	uni.Heatwave	Universe_Distort_Heatwave
+RG Utilities	uni.Picture in Picture	Universe_Distort_Picture_in_Pic
+RG Distortions	uni.Prism Displacement	Universe_Distort_Prism_Displace
+RG Distortions	uni.RGB Separation	Universe_Distort_RGB_Separation
+RG Generators	uni.Custom Dither	Universe_Generators_Custom_Dith
+RG Generators	uni.Fractal Background	Universe_Generators_Fractal_Bac
+RG Generators	uni.Gradient Ramp	Universe_Generators_Gradient_Ra
+RG Generators	uni.Soft Gradient Background	Universe_Generators_Soft_Gradie
+RG Generators	uni.Spectralicious	Universe_Generators_Spectralici
+RG Blurs and Glows	uni.Chromatic Glow	Universe_Glow_Chromatic_Glow
+RG Blurs and Glows	uni.Edge Glow	Universe_Glow_Edge_Glow_Premium
+RG Blurs and Glows	uni.Glimmer	Universe_Glow_Glimmer
+RG Blurs and Glows	uni.Glo Fi	Universe_Glow_Glo_Fi_Premium
+RG Blurs and Glows	uni.Glow	Universe_Glow_Glow
+RG Blurs and Glows	uni.Point Zoom	Universe_Glow_Point_Zoom
+RG Blurs and Glows	uni.Quantum	RG_UNI_Glow_Quantum
+RG Motion Graphics	uni.Array Gun	Universe_M_G_Array_Gun
+RG Motion Graphics	uni.HUD Components	Universe_Visualizations_HUD_Com
+RG Motion Graphics	uni.Line	Universe_Motion_Graphics_Draw_P
+RG Motion Graphics	uni.Progresso	Universe_M_G_Progresso
+RG Motion Graphics	uni.Reframe	RG_UNI_M_G_Reframe
+RG Generators	uni.Turbulence Noise	Universe_Generators_TurNoise
+RG Stylize	uni.Analog	RG_UNI_Stylize_Analog
+RG Stylize	uni.Carousel	Universe_Stylize_Carousel
+RG Stylize	uni.ChromaTown	RG_UNI_Chromatown
+RG Stylize	uni.Electrify	RG_UNI_Stylize_Electrify
+RG Stylize	uni.Error Diffuse Dither	Universe_Stylize_Error_Diffuse_
+RG Stylize	uni.Glitch	Universe_Stylize_Glitch
+RG Stylize	uni.Halftone Dither	Universe_Stylize_Halftone_Dithe
+RG Stylize	uni.Holomatrix II	Universe_Distort_Holomatrix
+RG Stylize	uni.Knoll Light Factory EZ	Universe_Knoll_Light_Factory_EZ
+RG Stylize	uni.MisFire	Universe_Misfire_Premium
+RG Stylize	uni.Multitone	RG_UNI_Stylize_Multitone
+RG Stylize	uni.Noir	Universe_Stylize_Noir_Moderne
+RG Stylize	uni.Ordered Dither	Universe_Stylize_Ordered_Dither
+RG Stylize	uni.RetroGrade	Universe_CrumplePop_RetroGrade
+RG Stylize	uni.Sketchify	Universe_Stylize_Sketchify
+RG Motion Graphics	uni.Symbol Mapper	Universe_Stylize_Symbol_Mapper
+RG Stylize	uni.Texturize	Universe_Stylize_Texturize
+RG Stylize	uni.Texturize Motion	MX_UNI_Stylize_Texturize_Motion
+RG Stylize	uni.Threshold Dither	Universe_Stylize_Threshold_Dith
+RG Stylize	uni.VHS	Universe_Stylize_VHS
+RG Stylize	uni.AV Club	Universe_Text_AV_Club
+RG Stylize	uni.Ecto	Universe_Text_Ecto
+RG Blurs and Glows	uni.Glo Fi II	Universe_Text_Glo_Fi_II
+RG Text	uni.Hacker Text	Universe_Text_Hacker_Text
+RG Stylize	uni.Long Shadow	Universe_Text_Long_Shadow
+RG Stylize	uni.Luster	Universe_Text_Luster
+RG Text	uni.Numbers	Universe_Text_Numbers
+RG Text	uni.Screen Text	Universe_Text_Screen_Text
+RG Text	uni.Text Tile	Universe_Text_Text_Tile
+RG Text	uni.Title Motion	Universe_Utilities_Title_Motion
+RG Text	uni.Type Cast	Universe_Text_Type_Cast
+RG Text	uni.Type On	Universe_Text_Type_On
+RG Text	uni.Typographic	RG_UNI_Text_Typographic
+RG Transitions	uni.Blinds	Universe_Transitions_Blinds
+RG Transitions	uni.Bokeh Transition	Universe_Transitions_Bokeh
+RG Transitions	uni.Camera Shake Transition	Universe_Transitions_Camera_Sha
+RG Transitions	uni.Carousel Transition	Universe_Transitions_Carousel_T
+RG Transitions	uni.Channel Blur	Universe_Transitions_Channel_Bl
+RG Transitions	uni.Channel Surf	Universe_Transitions_Channel_Su
+RG Transitions	uni.Clock Wipe	Universe_Transitions_Clock_Wipe
+RG Transitions	uni.Color Mosaic Transition	Universe_Transitions_Color_Mosa
+RG Transitions	uni.Color Stripe	Universe_Transitions_Color_Stri
+RG Transitions	uni.Cube	Universe_Transitions_Cube
+RG Transitions	uni.Diamond Wave	Universe_Transitions_Diamond_Wa
+RG Transitions	uni.Dolly Fade	Universe_Transitions_Dolly_Fade
+RG Transitions	uni.Exposure Blur	Universe_Exposure_Blur_Premium
+RG Transitions	uni.Film Transition	Universe_Transitions_Film_Trans
+RG Transitions	uni.Flicker Cut	Universe_Transitions_Flicker_Cu
+RG Transitions	uni.Fold	Universe_Transitions_Fold
+RG Transitions	uni.Glitch Transition	Universe_Transitions_Glitch_Tra
+RG Transitions	uni.HalfLight	Universe_Transitions_HalfLight
+RG Transitions	uni.Inside Cube	Universe_Transitions_Inside_Cub
+RG Transitions	uni.Knoll Light Transition	Universe_Transitions_Knoll_Ligh
+RG Transitions	uni.Linear Wipe	Universe_Transitions_Linear_Wip
+RG Transitions	uni.RetroGrade Transition	Universe_Transitions_RetroGrade
+RG Transitions	uni.Rubix Cube	Universe_Transitions_Rubics_Cub
+RG Transitions	uni.Shape Wipe	Universe_Transitions_Shape_Wipe
+RG Transitions	uni.Slide	Universe_Transitions_Slide
+RG Transitions	uni.Soft Edge Wipe	Universe_Soft_Edge_Wipe_Premium
+RG Transitions	uni.Spectralicious Transition	Universe_Transitions_Spectralic
+RG Transitions	uni.Stretch	RG_UNI_Transition_Stretch
+RG Transitions	uni.Swish Pan	Universe_Swish_Pan_Premium
+RG Transitions	uni.Triangle Wave	Universe_Transitions_Triangle_W
+RG Transitions	uni.Turbulence Transition	Universe_Transitions_Turbulence
+RG Transitions	uni.Unfold	Universe_Transitions_Unfold
+RG Transitions	uni.VHS Transition	Universe_Transitions_VHS_Transi
+RG Transitions	uni.Warp	RG_UNI_Transition_Warp
+RG Motion Graphics	uni.Logo Motion	Universe_Utilities_Logo_Motion
+RG Utilities	uni.Modes	RG_UNI_Utilities_Modes
+RG Utilities	uni.Palettes	Universe_Utilities_Palettes
+RG Utilities	uni.Socialize	RG_UNI_Utilities_Socialize
+RG Utilities	uni.Unmult	Universe_Utilities_Unmult_Premi
+RG VFX	Bang	rgBang
+RG Distortions	Chromatic Displacement	RG_VFX_ChromaDisp_AE
+RG VFX	Depth Generator	RG_VFX_Depth_Generator_AE
+RG VFX	King Pin Tracker	RG_KingPin_Tracker
+RG VFX	Lens Distortion Matcher	RG_Lens_Distortion
+RG VFX	Real Lens Flares	MX_Lens_Flare
+RG Blurs and Glows	Optical Glow	RG_VFX_OpticalGlow_AE
+RG VFX	Primatte Keyer 6	Photron Primatte6
+RG VFX	Reflection	rg.vfx.reflection
+RG VFX	Shadow	rg.vfx.shadow
+RG VFX	Spot Clone Tracker	RG_VFX_SpotClone_Tracker_AE
+RG VFX	Supercomp	RG_VFX_Supernova_AE
+RG Motion Graphics	3D Stroke	tc 3DStrokePath
+RG Motion Graphics	Echospace	tc Echospace
+RG Particles and 3D	Form	tc Form
+RG Particles and 3D	Geo	Geo
+RG Particles and 3D	Horizon	tc Trapcode Horizon
+RG Particles and 3D	Lux	tc Lux
+RG Particles and 3D	Mir 3	rg Mir
+RG Particles and 3D	Trapcode Particular	tc Particular
+RG Blurs and Glows	Shine	tc Shine
+RG Utilities	Sound Keys	tc Sound Keys
+RG Blurs and Glows	Starglow	tc Starglow
+RG Particles and 3D	Tao	tc Tao
+Immersive Video	VR Chromatic Aberrations	Mettle SkyBox Chromatic Aberrat
+Immersive Video	VR Color Gradients	Mettle SkyBox Color Gradients
+Immersive Video	VR Converter	Mettle SkyBox Converter
+Immersive Video	VR De-Noise	Mettle SkyBox Denoise
+Immersive Video	VR Digital Glitch	Mettle SkyBox Digital Glitch
+Immersive Video	VR Fractal Noise	Mettle SkyBox Fractal Noise
+Immersive Video	VR Blur	Mettle SkyBox Blur
+Immersive Video	VR Glow	Mettle SkyBox Glow
+Immersive Video	VR Plane to Sphere	Mettle SkyBox Project 2D
+Immersive Video	VR Rotate Sphere	Mettle SkyBox Rotate Sphere
+Immersive Video	VR Sharpen	Mettle SkyBox Sharpen
+Immersive Video	VR Sphere To Plane	Mettle SkyBox Viewer
+	Face Track Points	Pseudo/ADBE Animal Head66
+	Face Measurements	Pseudo/ADBE Animal Head14
+	Trace Path	Pseudo/ADBE Trace Path
+	Pattern Template	Pseudo/ADBE Pattern Template
+	Counter Controls	Pseudo/ADBE Counter Controls
+	Currency Controls	Pseudo/ADBE Currency Controls
+	Percentage Controls	Pseudo/ADBE Percentage Controls
+	Timer Controls	Pseudo/ADBE Timer Controls
+	2D Text Box	Pseudo/ADBE 2D Text Box
