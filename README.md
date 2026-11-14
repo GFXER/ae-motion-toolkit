@@ -53,6 +53,7 @@ syntax-checked but has not been run in AE yet, so expect to fix small things.
 | `transitions/c_scan_flash.jsx` | Scan-flash transition (stock AE, optional S_Glow) | untested |
 | `transitions/card_wipe.jsx` | Card Wipe transition (stock Card Wipe, randomised flips + jitter) | untested |
 | `transitions/datamosh_insert.jsx` | Places a real datamosh clip (from video-fx-tools/datamosh.py) over a cut | untested |
+| `transitions/distort_transition.jsx` | Lens-warp distort through a cut: Optics bulge + Turbulent wobble + radial smear + scale/rot jump, 1:2 timing, `strength` knob, stock AE | untested |
 | `transitions/mask_3d_transition.jsx` | No-plugin 3D mask transition: A pushes up, B rises with a roto break-out | untested |
 | `transitions/motion_mosh.jsx` | Fake datamosh through a cut (Displacement Map + macroblock map), no Universe | untested |
 | `transitions/one_two_rule.jsx` | The 1:2 timing rule: presets 12->24 / 15->30 / 20->40 (fps-scaled), spike + continuous travel curves, one-call adjustment-layer transition | untested |
