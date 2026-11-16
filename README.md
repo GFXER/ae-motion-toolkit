@@ -57,6 +57,7 @@ syntax-checked but has not been run in AE yet, so expect to fix small things.
 | `transitions/mask_3d_transition.jsx` | No-plugin 3D mask transition: A pushes up, B rises with a roto break-out | untested |
 | `transitions/motion_mosh.jsx` | Fake datamosh through a cut (Displacement Map + macroblock map), no Universe | untested |
 | `transitions/one_two_rule.jsx` | The 1:2 timing rule: presets 12->24 / 15->30 / 20->40 (fps-scaled), spike + continuous travel curves, one-call adjustment-layer transition | untested |
+| `transitions/transform_cut.jsx` | Motion through the cut on one adjustment layer: slide (4 directions, seamless tile + directional blur), spin, zoom-through, zoom punch; 1:2 timing, comp-size scaled, stock AE | untested |
 | `transitions/null_transition.jsx` | Null transitions: next shot as a tilted corner card swung to full frame | untested |
 | `transitions/study_bloom_in_cut.jsx` | Bloom-in cut: glow bloom on the incoming shot, 1:2 timing | untested |
 | `transitions/study_cell_reveal.jsx` | Colorama colour-cycle "cell" reveal for product/photo cards | tested in AE 26.5 |
