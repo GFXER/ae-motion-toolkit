@@ -52,6 +52,7 @@ syntax-checked but has not been run in AE yet, so expect to fix small things.
 | `transitions/c_prism_smear.jsx` | Prism-lens smear transition (S_PrismLens + Echo / Directional Blur) | untested |
 | `transitions/c_scan_flash.jsx` | Scan-flash transition (stock AE, optional S_Glow) | untested |
 | `transitions/card_wipe.jsx` | Card Wipe transition (stock Card Wipe, randomised flips + jitter) | untested |
+| `transitions/checker_wipe.jsx` | Checkerboard tile wipe: tiles spin in on a woven diagonal wave, cut under full cover, spin out to reveal B; the frame never moves (safe for talking-heads), 2 colours + sparse accent, 4 start corners, fps/size scaled, stock shape layers | untested |
 | `transitions/datamosh_insert.jsx` | Places a real datamosh clip (from video-fx-tools/datamosh.py) over a cut | untested |
 | `transitions/distort_transition.jsx` | Lens-warp distort through a cut: Optics bulge + Turbulent wobble + radial smear + scale/rot jump, 1:2 timing, `strength` knob, stock AE | untested |
 | `transitions/flash_strobe.jsx` | Flash family: real camera flash (instant on, eased decay, exposure kick), flash pair, negative B/W / white strobes, invert pre-lap, FLASH MASTER slider; fps-scaled, stock AE | untested |
