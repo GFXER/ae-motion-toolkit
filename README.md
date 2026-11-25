@@ -60,6 +60,7 @@ syntax-checked but has not been run in AE yet, so expect to fix small things.
 | `transitions/mask_3d_transition.jsx` | No-plugin 3D mask transition: A pushes up, B rises with a roto break-out | untested |
 | `transitions/motion_mosh.jsx` | Fake datamosh through a cut (Displacement Map + macroblock map), no Universe | untested |
 | `transitions/one_two_rule.jsx` | The 1:2 timing rule: presets 12->24 / 15->30 / 20->40 (fps-scaled), spike + continuous travel curves, one-call adjustment-layer transition | untested |
+| `transitions/slat_wipe.jsx` | Dark slats close over a cut and open onto B while the set drifts sideways at one continuous speed; the footage never moves, 1:2 timing, fps/size scaled, stock Venetian Blinds | untested |
 | `transitions/transform_cut.jsx` | Motion through the cut on one adjustment layer: slide (4 directions, seamless tile + directional blur), spin, zoom-through, zoom punch; 1:2 timing, comp-size scaled, stock AE | untested |
 | `transitions/null_transition.jsx` | Null transitions: next shot as a tilted corner card swung to full frame | untested |
 | `transitions/study_bloom_in_cut.jsx` | Bloom-in cut: glow bloom on the incoming shot, 1:2 timing | untested |
