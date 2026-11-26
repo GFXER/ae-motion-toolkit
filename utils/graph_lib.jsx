@@ -15,7 +15,13 @@
 //   glHold(prop, times, values)              stepped hold keys (stickers / ransom letters / 2 f boil)
 //   glStep(prop, fps)                        adds posterizeTime(fps) in front of the existing expression (stepped look)
 //   glEaseInfo(fam, dv, dur)                 [outInfl, outSpeed, inInfl, inSpeed] for logging / Python parity
+//   bezierEase(prop, k1, k2, curve)          ease an EXISTING key pair with a family name or [x1,y1,x2,y2]
+//                                            (Flow / CSS cubic-bezier numbers). returns prop
+//   bezierToAE(curve)                        [outInfl %, outSpeedRatio, inInfl %, inSpeedRatio]; ratio x avg speed = AE speed
+//   aeToBezier(outInfl, outRatio, inInfl, inRatio)   the inverse: AE ease numbers -> [x1,y1,x2,y2]
+//   aeKeysToBezier(prop, k1, k2, dim)        read the ease AE already has on two keys back as [x1,y1,x2,y2]
 // Families: see GL_FAM below. Keep names in sync with tools/curve_fit.py FAMILIES.
+// Pictures of every family and the conversion explained: docs/bezier_ease.md
 
 var GL_FAM = {
     // --- measured on the zine refs (mean curve of each cluster, rms of the mean fit in brackets) ---
@@ -34,13 +40,33 @@ var GL_FAM = {
     linear:           [0.0, 0.0, 1.0, 1.0]
 };
 
-function glFam(f) { if (typeof f == "string") { if (!GL_FAM[f]) throw new Error("graph_lib: unknown family " + f); return GL_FAM[f]; } return f; }
+function glFam(f) {
+    if (typeof f == "string") { if (!GL_FAM[f]) throw new Error("graph_lib: unknown family " + f); return GL_FAM[f]; }
+    if (!f || typeof f != "object" || f.length != 4) throw new Error("graph_lib: a curve is a family name or [x1,y1,x2,y2]");
+    return f;
+}
+
+// cubic-bezier(x1,y1,x2,y2) -> AE ease, independent of the move: speeds come back as RATIOS of the average speed
+// (dv/dur), so the same four numbers work for any distance and duration. Influence is clamped to AE's 0.1..100 %.
+// A handle with zero length (x1 = 0 or x2 = 1) has no defined speed; it gets speed 0 at 0.1 % influence, which AE
+// draws as a straight start/end (the same as glEaseInfo always did).
+function bezierToAE(curve) {
+    var b = glFam(curve), x1 = b[0], y1 = b[1], x2 = b[2], y2 = b[3];
+    if (!(x1 >= 0 && x1 <= 1 && x2 >= 0 && x2 <= 1)) throw new Error("graph_lib: bezier x1/x2 must be in 0..1 (time cannot run backwards)");
+    var i0 = Math.max(0.001, x1), i1 = Math.max(0.001, 1 - x2);
+    var r0 = (x1 > 1e-4) ? y1 / i0 : 0, r1 = ((1 - x2) > 1e-4) ? (1 - y2) / i1 : 0;
+    return [Math.min(100, Math.max(0.1, i0 * 100)), r0, Math.min(100, Math.max(0.1, i1 * 100)), r1];
+}
+
+// AE ease numbers (influence %, speed / average speed) -> [x1,y1,x2,y2]. Paste the result into Flow or CSS.
+function aeToBezier(outInfl, outRatio, inInfl, inRatio) {
+    var x1 = outInfl / 100, x2 = 1 - inInfl / 100;
+    return [x1, outRatio * x1, x2, 1 - inRatio * (inInfl / 100)];
+}
 
 function glEaseInfo(fam, dv, dur) {
-    var b = glFam(fam), x1 = b[0], y1 = b[1], x2 = b[2], y2 = b[3], avg = dv / dur;
-    var i0 = Math.max(0.001, x1), i1 = Math.max(0.001, 1 - x2);
-    var s0 = (x1 > 1e-4) ? (y1 / i0) * avg : 0, s1 = ((1 - x2) > 1e-4) ? ((1 - y2) / i1) * avg : 0;
-    return [Math.min(100, Math.max(0.1, i0 * 100)), s0, Math.min(100, Math.max(0.1, i1 * 100)), s1];
+    var r = bezierToAE(fam), avg = dv / dur;
+    return [r[0], r[1] * avg, r[2], r[3] * avg];
 }
 
 function glDims(prop) {
@@ -109,6 +135,28 @@ function glKey3(prop, t0, tc, t1, v0, vc, v1, famA, famB) {
     prop.setTemporalEaseAtKey(kc, a, b);
     try { prop.setTemporalContinuousAtKey(kc, true); } catch (e) {}
     return prop;
+}
+
+// Ease keys that already exist (hand-keyed, or made by another script) with a family name or [x1,y1,x2,y2].
+// k2 defaults to k1 + 1. Only the out side of k1 and the in side of k2 change, so a chain of keys can be eased
+// segment by segment. Spatial properties cannot overshoot through temporal ease (y outside 0..1): use glExpr.
+function bezierEase(prop, k1, k2, curve) {
+    if (k2 === undefined || k2 === null) k2 = k1 + 1;
+    if (k1 < 1 || k2 > prop.numKeys || k2 <= k1) throw new Error("graph_lib: bezierEase needs two keys, got " + k1 + ".." + k2 + " of " + prop.numKeys);
+    glEaseSegment(prop, k1, k2, curve, null, null, prop.keyTime(k2) - prop.keyTime(k1));
+    return prop;
+}
+
+// Read the ease AE has between keys k1 and k2 back as [x1,y1,x2,y2] (dimension dim, default 0; spatial props use
+// the path length). Handy to copy a hand-made AE curve into Flow, CSS or GL_FAM. Returns null for a still segment.
+function aeKeysToBezier(prop, k1, k2, dim) {
+    if (k2 === undefined || k2 === null) k2 = k1 + 1;
+    var d = prop.isSpatial ? 0 : (dim || 0), v0 = prop.keyValue(k1), v1 = prop.keyValue(k2);
+    var dv = prop.isSpatial ? Math.abs(glPathLen(v0, v1)) : (glNum(v1, d) - glNum(v0, d));
+    var dur = prop.keyTime(k2) - prop.keyTime(k1);
+    if (Math.abs(dv) < 1e-9 || dur <= 0) return null;
+    var avg = dv / dur, o = prop.keyOutTemporalEase(k1)[d], i = prop.keyInTemporalEase(k2)[d];
+    return aeToBezier(o.influence, o.speed / avg, i.influence, i.speed / avg);
 }
 
 function glExpr(fam, t0, t1, v0, v1) {

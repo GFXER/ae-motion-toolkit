@@ -1,5 +1,20 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- `transitions/slat_wipe.jsx`: dark slats close over a cut and open onto the next shot.
+- `utils/graph_lib.jsx`: `bezierEase()`, `bezierToAE()`, `aeToBezier()` and `aeKeysToBezier()` convert between
+  cubic-bezier numbers (Flow, CSS) and AE influence / speed, both ways.
+- `docs/bezier_ease.md`: the conversion explained, with value and speed pictures of every ease family.
+  `docs/tools/plot_eases.py` redraws them, `docs/tools/check_bezier_ease.js` checks the helpers in Node.
+
+### Changed
+
+- `glFam()` now throws on a curve that is not a family name or four numbers, and `bezierToAE()` (used by
+  `glEaseInfo()`) throws when x1 or x2 is outside 0..1.
+
 ## v1.1.0 (2026-11-25)
 
 Six new transitions. All are stock After Effects and scale with the comp size and frame rate. They are syntax-checked

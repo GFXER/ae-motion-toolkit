@@ -10,3 +10,4 @@ Adobe After Effects Auto-Save/
 *.jpg
 *.tif
 *.log
+__pycache__/

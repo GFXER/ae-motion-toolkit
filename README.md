@@ -102,7 +102,7 @@ syntax-checked but has not been run in AE yet, so expect to fix small things.
 | `text/pixel_morph_text.jsx` | Word-per-cut text that melts via stacked Pixel Motion Blur | untested |
 | `text/study_decode_band.jsx` | Letter-decode title + letterbox band window opener | untested |
 | `text/ui_shape_morph.jsx` | Apple-style UI shape morph (one rounded rect morphs between states) | untested |
-| `utils/graph_lib.jsx` | Measured ease-curve families applied as real AE keyframes (glKey, glKey3, glExpr, ...) | untested |
+| `utils/graph_lib.jsx` | Measured ease-curve families applied as real AE keyframes (glKey, glKey3, glExpr, ...); `bezierEase()` puts Flow / CSS cubic-bezier numbers on existing keys and `aeKeysToBezier()` reads them back. Curves and the conversion: [docs/bezier_ease.md](docs/bezier_ease.md) | untested (conversion checked in Node) |
 | `utils/layer_labels.jsx` | Layer colour-label system (LBL.*, autoLabel, labelComp, labelProject) | tested in AE 26.5 |
 | `utils/perception_guides.jsx` | Composition guide layers + a text "cheap look" audit report | untested |
 | `utils/safe_glow.jsx` | safeGlow(): stock Glow -> S_Glow -> Crates Glow fallback chain | tested in AE 26.5 |
