@@ -61,6 +61,7 @@ syntax-checked but has not been run in AE yet, so expect to fix small things.
 | `transitions/motion_mosh.jsx` | Fake datamosh through a cut (Displacement Map + macroblock map), no Universe | untested |
 | `transitions/one_two_rule.jsx` | The 1:2 timing rule: presets 12->24 / 15->30 / 20->40 (fps-scaled), spike + continuous travel curves, one-call adjustment-layer transition | untested |
 | `transitions/slat_wipe.jsx` | Dark slats close over a cut and open onto B while the set drifts sideways at one continuous speed; the footage never moves, 1:2 timing, fps/size scaled, stock Venetian Blinds | untested |
+| `transitions/stretch_cut.jsx` | Pixel-stretch through a cut: A smears out from a line across the frame, the cut hides at full smear, B pulls back out of it; any direction, optional flip for B and Directional Blur on the same axis, 1:2 timing, fps/size scaled, stock CC Scale Wipe | untested |
 | `transitions/transform_cut.jsx` | Motion through the cut on one adjustment layer: slide (4 directions, seamless tile + directional blur), spin, zoom-through, zoom punch; 1:2 timing, comp-size scaled, stock AE | untested |
 | `transitions/null_transition.jsx` | Null transitions: next shot as a tilted corner card swung to full frame | untested |
 | `transitions/study_bloom_in_cut.jsx` | Bloom-in cut: glow bloom on the incoming shot, 1:2 timing | untested |

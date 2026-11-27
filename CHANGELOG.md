@@ -5,6 +5,7 @@
 ### Added
 
 - `transitions/slat_wipe.jsx`: dark slats close over a cut and open onto the next shot.
+- `transitions/stretch_cut.jsx`: pixel-stretch (CC Scale Wipe) through a cut, with an optional flip for the incoming side.
 - `utils/graph_lib.jsx`: `bezierEase()`, `bezierToAE()`, `aeToBezier()` and `aeKeysToBezier()` convert between
   cubic-bezier numbers (Flow, CSS) and AE influence / speed, both ways.
 - `docs/bezier_ease.md`: the conversion explained, with value and speed pictures of every ease family.
